@@ -8,8 +8,11 @@ body {
   text-transform: uppercase;
   letter-spacing: .2em;
   font-weight: 300;
-
   font-size: 30px;
+}
+
+.logo a:visited {
+  color: black;
 }
 
 .logo-bold {
@@ -21,7 +24,8 @@ nav {
   justify-content: space-between;
   align-items: center;
   margin-right: 70px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #F8A000;
+  border-top: 1px solid #F8A000;
 }
 
 nav ul {
@@ -55,9 +59,26 @@ h2, h3, h4 {
   font-weight: 300;
 }
 
+.intro {
+  margin: 40px 0;
+  font-size: 22px;
+}
+
+.username {
+  font-weight: 400;
+  font-style: italic
+}
+
+h3 {
+  color: #F8A000;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 400;
+}
+
 footer {
   margin-top: 200px;
-  border-top: 1px solid black;
+  border-top: 1px solid #F8A000;
 }
 
 img {

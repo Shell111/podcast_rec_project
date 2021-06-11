@@ -7,3 +7,9 @@ get '/podcasts' do
   erb :'/podcasts/index'
   # erb :'/podcast/index', locals: {menu: results }
 end
+
+
+# Displays create form
+get '/podcasts/new' do
+  erb :'/podcasts/new'
+end
