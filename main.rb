@@ -5,12 +5,14 @@ require 'pry' if development?
 require 'pg'
 
 
+require_relative 'controllers/podcasts_controller' 
+
 get '/' do
-  "Podcast rec test"
-  erb :index
+  redirect '/podcasts'
 end
 
-
-
+# get '/podcast' do
+#   "The Podcast Rec & more content here"
+# end
 
 
