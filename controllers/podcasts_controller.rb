@@ -15,10 +15,21 @@ end
 # Add an edit button
 
 get '/podcasts/:id' do |id|
-  # results = run_sql("SELECT * FROM menu WHERE id = #{id};")
-  # id = params[:id]
   results = display_podcast(id)
-  # display_food(id)
-  erb :'podcasts/show', locals: {podcasts: results[0]} #create an individual food display ERB 
-  # locals menu is my food table
+  erb :'podcasts/show', locals: {podcasts: results[0]}  
+end
+
+
+
+# Retrieves the form data
+post '/podcasts' do
+  podcast_title = params[:podcast_title]
+  genre = params[:genre]
+  image_url = params[:image_url]
+  about = params[:about]
+  show_url = params[:show_url]
+
+  create_show(podcast_title, genre, image_url, about, show_url)
+  redirect "/podcasts"
+
 end
