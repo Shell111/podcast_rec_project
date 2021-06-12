@@ -157,3 +157,50 @@ form select {
   border: 1px solid black;
   padding: 20px;
 }
+
+
+.user_auth {
+    list-style-type: none;
+    margin-left: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 10px 20px;
+    box-shadow: 5px 5px black;
+    transition: ease-in-out 0.3s;
+    border-radius: 4px;
+    font-family: Helvetica, Arial, sans-serif;
+    background: #f8a000;
+    margin-bottom: 40px;
+  }
+
+  .update-btns input {
+    list-style-type: none;
+    margin-left: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 10px 20px;
+    box-shadow: 5px 5px black;
+    transition: ease-in-out 0.3s;
+    border-radius: 4px;
+    font-family: Helvetica, Arial, sans-serif;
+    background: #f8a000;
+    width: 120px;
+  }
+
+  .update-btns a {
+    list-style-type: none;
+    margin-left: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 10px 20px;
+    box-shadow: 5px 5px black;
+    transition: ease-in-out 0.3s;
+    border-radius: 4px;
+    font-family: Helvetica, Arial, sans-serif;
+    background: #f8a000;
+    width: 120px;
+    margin-top: 20px;
+  }

@@ -1,5 +1,23 @@
 
-<h2 class="intro">Welcome <span class="username">name</span>, wanna recommend a new ep?</h2>
+<h2 class="intro">
+
+
+<% if is_logged_in?() %>
+   Welcome <%=current_user["first_name"]%>! wanna recommend a new ep?</h2>
+    <form action="/sessions" method="POST">
+
+      <input type="hidden" name="_method" value="DELETE">
+      <input type="submit" value="Logout">
+    </form>
+
+ <% else %>
+  <button class="user_auth"><a href="/sign_up">Sign up</a></button>
+  <button class="user_auth"><a href="/login">Log in</a></button>
+<% end %>
+
+
+
+
 
 <main class="podcast-listing">
   <% podcasts.each do |podcast|%>
@@ -13,7 +31,7 @@
       <h4>About:</h4>
       <p><%= podcast["about"]%></p>
 
-      <a href="/podcasts/<%= podcast["id"]%>" > View show </a>
+      <a href="/podcasts/<%= podcast["id"]%>"> View show </a>
     </section>
   
   <% end %>

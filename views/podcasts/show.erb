@@ -9,6 +9,20 @@
 
 
   <h3>About: </h3>
-  <p><%= podcasts["about"]%></p>
+  <p><%=podcasts["about"]%></p>
 
 </main>
+
+<div class="update-btns">
+    <button><a href="/podcasts/<%=podcasts["id"]%>/edit">Edit this item</a></button>
+
+    <form action="/podcasts/<%=podcasts["id"]%>" method="POST">
+      <input type="hidden" name="_method" value="DELETE">
+      <input type="submit" value="Delete" />
+    </form>
+    
+</div>
+
+<div class="back-to-menu">
+    <a href="/podcasts">Return to podcasts</a>
+</div>

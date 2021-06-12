@@ -1,0 +1,44 @@
+<h1>Edit show</h1>
+
+<%action = "/podcasts"%>
+<% if edit %>
+  <% action += "/" + podcasts["id"]%>
+<%end%>
+
+<% if is_logged_in?() %>
+
+
+<form action="<%=action%>" method="POST">
+  <% if edit %>
+    <input type="hidden" name="_method" value="PUT">
+  <%end%>
+
+  <label for="podcast_title"> Name: </label>
+  <input name="podcast_title" value="<%=podcasts["podcast_title"]%>"/>
+
+  <label for="genre">Genre:</label>
+  <input name="genre" value="<%=podcasts["genre"]%>"/>
+
+  <label for="image_url">Image:</label>
+  <input name="image_url" value="<%=podcasts["image_url"]%>"/>
+
+  <label for="about">About:</label>
+  <input name="about" value="<%=podcasts["about"]%>"/>
+
+  <label for="show_url">Link:</label>
+  <input name="show_url" value="<%=podcasts["show_url"]%>"/>
+
+
+<% button_value = "Add show" %>
+<% if edit %>
+  <% button_value = "Update" %>
+<%end%>
+  <input type="submit" value="<%= button_value%> " />
+
+</form>
+
+<% else %>
+  <a href="/sign_up">Click here to sign up</a>
+  <a href="/login">Click here to log in</a>
+
+<% end %>
