@@ -1,12 +1,13 @@
 body {
-  background-color: #F4F2F2;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  font-weight: 300;
+  background-color: #f4f2f2;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 300;
   padding-left: 20px;
 }
 
 .logo {
   text-transform: uppercase;
-  letter-spacing: .2em;
+  letter-spacing: 0.2em;
   font-weight: 300;
   font-size: 30px;
 }
@@ -23,9 +24,9 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-right: 70px;
-  border-bottom: 1px solid #F8A000;
-  border-top: 1px solid #F8A000;
+  margin-right: 30px;
+  border-bottom: 1px solid #f8a000;
+  border-top: 1px solid #f8a000;
 }
 
 nav ul {
@@ -35,16 +36,16 @@ nav ul {
 
 nav li {
   list-style-type: none;
-  margin-right: 5px;
+  margin-left: 10px;
   text-transform: uppercase;
   text-decoration: none;
   border: 1px solid black;
   padding: 10px 20px;
   box-shadow: 5px 5px black;
-  transition: ease-in-out .3s;
+  transition: ease-in-out 0.3s;
   border-radius: 4px;
   font-family: Helvetica, Arial, sans-serif;
-  background: #F8A000;
+  background: #f8a000;
 }
 
 nav li:hover {
@@ -55,7 +56,9 @@ nav a {
   text-decoration: none;
 }
 
-h2, h3, h4 {
+h2,
+h3,
+h4 {
   font-weight: 300;
 }
 
@@ -66,11 +69,11 @@ h2, h3, h4 {
 
 .username {
   font-weight: 400;
-  font-style: italic
+  font-style: italic;
 }
 
 h3 {
-  color: #F8A000;
+  color: #f8a000;
   text-transform: uppercase;
   font-size: 25px;
   font-weight: 400;
@@ -78,7 +81,7 @@ h3 {
 
 footer {
   margin-top: 200px;
-  border-top: 1px solid #F8A000;
+  border-top: 1px solid #f8a000;
 }
 
 img {
@@ -88,4 +91,69 @@ img {
 .podcast-listing {
   display: flex;
   gap: 90px;
+}
+
+.page-content h1 {
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 24px;
+  margin-top: 40px;
+  letter-spacing: 0.08em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  margin-top: 40px;
+}
+
+form input {
+  margin: 10px 0 20px 0;
+  height: 40px;
+  padding-left: 20px;
+  border-radius: 7px;
+  border: 1px solid black;
+  box-shadow: inset 2px 2px black;
+}
+form button {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  width: 200px;
+  box-shadow: 3px 3px black;
+  height: 40px;
+  border-radius: 6px;
+  border: 1px dotted black;
+  background-color: #f8a000;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.6em;
+  transition: ease-in-out 0.3s;
+}
+
+form button:hover {
+  box-shadow: none;
+}
+
+form select {
+  margin: 10px 0 20px 0;
+  height: 40px;
+  padding-left: 20px;
+  border-radius: 7px;
+  border: 1px solid black;
+  box-shadow: inset 2px 2px black;
+}
+
+.new-show-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.new-show-form > img {
+  margin-top: 60px;
+}
+
+.new-show-image {
+  width: 450px;
+  border: 1px solid black;
+  padding: 20px;
 }
