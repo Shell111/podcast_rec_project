@@ -3,13 +3,15 @@ body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 300;
   padding-left: 20px;
+  width: 1300px;
+  margin: auto;
 }
 
-.logo {
+.logo a {
   text-transform: uppercase;
   letter-spacing: 0.2em;
   font-weight: 300;
-  font-size: 30px;
+  font-size: 32px;
 }
 
 .logo a:visited {
@@ -56,10 +58,53 @@ nav a {
   text-decoration: none;
 }
 
+.access-btns {
+  display: flex;
+}
+
+.access-btns,
+buttons {
+  justify-content: left;
+}
+
+.user_auth {
+  width: 160px;
+  list-style-type: none;
+  margin-left: 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 10px 20px;
+  box-shadow: 5px 5px black;
+  transition: ease-in-out 0.3s;
+  border-radius: 4px;
+  font-family: Helvetica, Arial, sans-serif;
+  background: #f8a000;
+  margin-bottom: 40px;
+  text-decoration: none;
+}
+
+.user_auth a {
+  text-decoration: none;
+  transition: ease-in-out 0.3s;
+  font-size: 14px;
+}
+
+.user_auth:hover {
+  text-decoration: none;
+  box-shadow: 2px 2px black;
+}
+
+h1,
 h2,
 h3,
 h4 {
   font-weight: 300;
+}
+
+h4 {
+  text-transform: uppercase;
+  font-size: 18px;
 }
 
 .intro {
@@ -79,6 +124,14 @@ h3 {
   font-weight: 400;
 }
 
+p {
+  font-size: 18px;
+}
+
+a {
+  font-size: 18px;
+}
+
 footer {
   margin-top: 200px;
   border-top: 1px solid #f8a000;
@@ -89,16 +142,25 @@ img {
 }
 
 .podcast-listing {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 90px;
 }
 
 .page-content h1 {
-  font-weight: 300;
+  font-weight: 600;
   text-transform: uppercase;
-  font-size: 24px;
-  margin-top: 40px;
+  font-size: 28px;
+  margin-top: 10px;
   letter-spacing: 0.08em;
+  color: #f8a000;
+}
+
+.page-content {
+  display: grid;
+  grid-template-columns: 35% 45% 10%;
+  gap: 10px;
+  margin-top: 100px;
 }
 
 form {
@@ -116,6 +178,7 @@ form input {
   border: 1px solid black;
   box-shadow: inset 2px 2px black;
 }
+
 form button {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   width: 200px;
@@ -158,49 +221,44 @@ form select {
   padding: 20px;
 }
 
+.update-btns {
+  display: flex;
+}
 
-.user_auth {
-    list-style-type: none;
-    margin-left: 10px;
-    text-transform: uppercase;
-    text-decoration: none;
-    border: 1px solid black;
-    padding: 10px 20px;
-    box-shadow: 5px 5px black;
-    transition: ease-in-out 0.3s;
-    border-radius: 4px;
-    font-family: Helvetica, Arial, sans-serif;
-    background: #f8a000;
-    margin-bottom: 40px;
-  }
+.update-btns a {
+  font-size: 15px;
+  text-decoration: none;
+}
 
-  .update-btns input {
-    list-style-type: none;
-    margin-left: 10px;
-    text-transform: uppercase;
-    text-decoration: none;
-    border: 1px solid black;
-    padding: 10px 20px;
-    box-shadow: 5px 5px black;
-    transition: ease-in-out 0.3s;
-    border-radius: 4px;
-    font-family: Helvetica, Arial, sans-serif;
-    background: #f8a000;
-    width: 120px;
-  }
+.update-btns input {
+  list-style-type: none;
+  margin-left: 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 10px 20px;
+  box-shadow: 5px 5px black;
+  transition: ease-in-out 0.3s;
+  border-radius: 4px;
+  font-family: Helvetica, Arial, sans-serif;
+  background: #f8a000;
+  width: 120px;
+}
 
-  .update-btns a {
-    list-style-type: none;
-    margin-left: 10px;
-    text-transform: uppercase;
-    text-decoration: none;
-    border: 1px solid black;
-    padding: 10px 20px;
-    box-shadow: 5px 5px black;
-    transition: ease-in-out 0.3s;
-    border-radius: 4px;
-    font-family: Helvetica, Arial, sans-serif;
-    background: #f8a000;
-    width: 120px;
-    margin-top: 20px;
-  }
+.update-btns button {
+  list-style-type: none;
+  margin: 50px 0 0 0;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 10px 20px;
+  box-shadow: 5px 5px black;
+  transition: ease-in-out 0.3s;
+  border-radius: 4px;
+  font-family: Helvetica, Arial, sans-serif;
+  background: #f8a000;
+  width: 220px;
+  padding: 0px;
+  height: 40px;
+  display: inline-block;
+}

@@ -1,28 +1,32 @@
 <main class="page-content">
 
+  <div class="show-left">
+    <img src="<%=podcasts["image_url"] %>" alt="">
 
-  <h1><%= podcasts["podcast_title"]%></h1>
+  </div>
 
-  <img src="<%=podcasts["image_url"] %>" alt="">
+  <div class="show-right">
+    <h1><%= podcasts["podcast_title"]%></h1>
 
-  <h4>Genre: <%= podcasts["genre"]%></h4>
+    <h4>Genre: <%= podcasts["genre"]%></h4>
 
 
-  <h3>About: </h3>
+    <h4>About: </h4>
   <p><%=podcasts["about"]%></p>
 
+  <div class="update-btns">
+      <button><a href="/podcasts/<%=podcasts["id"]%>/edit">Edit show</a></button>
+
+      <form action="/podcasts/<%=podcasts["id"]%>" method="POST">
+        <input type="hidden" name="_method" value="DELETE">
+        <input type="submit" value="Delete"/>
+      </form>
+      
+  </div>
+
+  <div class="back-to-menu">
+      <a href="/podcasts">Return to podcasts</a>
+  </div>
+
+  </div>
 </main>
-
-<div class="update-btns">
-    <button><a href="/podcasts/<%=podcasts["id"]%>/edit">Edit this item</a></button>
-
-    <form action="/podcasts/<%=podcasts["id"]%>" method="POST">
-      <input type="hidden" name="_method" value="DELETE">
-      <input type="submit" value="Delete" />
-    </form>
-    
-</div>
-
-<div class="back-to-menu">
-    <a href="/podcasts">Return to podcasts</a>
-</div>

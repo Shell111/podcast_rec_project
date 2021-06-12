@@ -10,11 +10,14 @@
       <input type="submit" value="Logout">
     </form>
 
- <% else %>
-  <button class="user_auth"><a href="/sign_up">Sign up</a></button>
-  <button class="user_auth"><a href="/login">Log in</a></button>
-<% end %>
+<div class="access-btns">
 
+  <% else %>
+    <button class="user_auth"><a href="/sign_up">Sign up</a></button>
+    <button class="user_auth"><a href="/login">Log in</a></button>
+  <% end %>
+
+</div>
 
 
 
@@ -28,7 +31,7 @@
       <h3><%= podcast["podcast_title"]%></h3>
 
       <h4><%= podcast["genre"]%></h4>
-      <h4>About:</h4>
+      <p>About:</p>
       <p><%= podcast["about"]%></p>
 
       <a href="/podcasts/<%= podcast["id"]%>"> View show </a>

@@ -1,4 +1,4 @@
-<main class="page-content">
+<main class="recommend-content">
   <h1>Recommend a new podcast</h1>
 
   <% if is_logged_in?() %>
@@ -29,9 +29,10 @@
 
 
     <% else %>
-      <a href="/sign_up">Click here to sign up</a>
-      <a href="/login">Click here to log in</a>
-
-    <% end %>
+    <div class="access-btns">
+      <button class="user_auth"><a href="/sign_up">Sign up</a></button>
+      <button class="user_auth"><a href="/login">Log in</a></button>
+      <% end %>
+    </div>
    </section>
 </main>
