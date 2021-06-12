@@ -1,6 +1,8 @@
 <main class="page-content">
   <h1>Recommend a new podcast</h1>
 
+  <% if is_logged_in?() %>
+
   <section class="new-show-form">
     <form class="new-show" action="/podcasts" method="POST">
 
@@ -24,5 +26,12 @@
   
     </form>
       <img class="new-show-image" src="https://images.unsplash.com/photo-1584679109597-c656b19974c9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8YWxidW18ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+
+
+    <% else %>
+      <a href="/sign_up">Click here to sign up</a>
+      <a href="/login">Click here to log in</a>
+
+    <% end %>
    </section>
 </main>
