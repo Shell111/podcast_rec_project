@@ -2,26 +2,24 @@
 <h2 class="intro">Welcome <span class="username">name</span>, wanna recommend a new ep?</h2>
 
 <main class="podcast-listing">
+  <% podcasts.each do |podcast|%>
 
-  <section class="podcast">
-    <img src="https://images.unsplash.com/photo-1584679109597-c656b19974c9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8YWxidW18ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+    <section class="podcast">
+      <img src="<%=podcast["image_url"] %>" alt="">
 
-    <h3>Podcast title</h3>
-    <h4>Genre</h4>
-    <h4>About:</h4>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ad, ullam molestiae deserunt ratione recusandae voluptate vitae consequatur non dolorum accusamus alias, culpa facere eveniet modi beatae ut tenetur id.</p>
+      <h3><%= podcast["podcast_title"]%></h3>
 
-    <a href="/podcasts/">View show</a>
-  </section>
+      <h4><%= podcast["genre"]%></h4>
+      <h4>About:</h4>
+      <p><%= podcast["about"]%></p>
 
-  <section class="podcast">
-    <img src="https://images.unsplash.com/photo-1584679109597-c656b19974c9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8YWxidW18ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+      <a href="/podcasts/<%= podcast["id"]%>" > View show </a>
+    </section>
+  
+  <% end %>
 
-    <h3>Podcast title</h3>
-    <h4>Genre</h4>
-    <h4>About:</h4>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ad, ullam molestiae deserunt ratione recusandae voluptate vitae consequatur non dolorum accusamus alias, culpa facere eveniet modi beatae ut tenetur id.</p>
-  </section>
+
+
 
   <section class="podcast">
     <img src="https://images.unsplash.com/photo-1584679109597-c656b19974c9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8YWxidW18ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
