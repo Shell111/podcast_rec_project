@@ -3,11 +3,11 @@
 
 
 <% if is_logged_in?() %>
-   Welcome <%=current_user["first_name"]%>! wanna recommend a new ep?</h2>
-    <form action="/sessions" method="POST">
+   Hey <%=current_user["first_name"]%>! Wanna recommend a new ep?</h2>
+    <form class="log-out" action="/sessions" method="POST">
 
       <input type="hidden" name="_method" value="DELETE">
-      <input type="submit" value="Logout">
+      <input type="submit" value="Log out">
     </form>
 
 <div class="access-btns">
@@ -26,7 +26,7 @@
   <% podcasts.each do |podcast|%>
 
     <section class="podcast">
-      <img src="<%=podcast["image_url"] %>" alt="">
+      <img src="<%=podcast["image_url"] %>" alt="<%= podcast["podcast_title"]%> podcast image">
 
       <h3><%= podcast["podcast_title"]%></h3>
 

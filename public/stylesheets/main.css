@@ -1,9 +1,10 @@
 body {
-  background-color: #f4f2f2;
+  background-color: #f9f9f9;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 300;
   padding-left: 20px;
   width: 1300px;
+  padding-top: 20px;
   margin: auto;
 }
 
@@ -109,7 +110,28 @@ h4 {
 
 .intro {
   margin: 40px 0;
-  font-size: 22px;
+  font-size: 20px;
+}
+
+.log-out input {
+  position: absolute;
+  background-color: white;
+  top: 120px;
+  right: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 160px;
+  box-shadow: 3px 3px black;
+  height: 40px;
+  border-radius: 3px;
+  border: 1px dotted black;
+  text-align: center;
+  text-transform: uppercase;
+  transition: ease-in-out 0.3s;
+  letter-spacing: 0.2em;
+}
+
+.log-out input:hover {
+  box-shadow: 1px 1px black;
 }
 
 .username {
@@ -139,6 +161,7 @@ footer {
 
 img {
   width: 350px;
+  border-radius: 5px;
 }
 
 .podcast-listing {
@@ -180,7 +203,7 @@ form input {
 }
 
 form button {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   width: 200px;
   box-shadow: 3px 3px black;
   height: 40px;
@@ -258,6 +281,24 @@ form select {
   font-family: Helvetica, Arial, sans-serif;
   background: #f8a000;
   width: 220px;
+  padding: 0px;
+  height: 40px;
+  display: inline-block;
+}
+
+.update-show-btn {
+  list-style-type: none;
+  margin: 50px 0 0 0;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 10px 20px;
+  box-shadow: 5px 5px black;
+  transition: ease-in-out 0.3s;
+  border-radius: 4px;
+  font-family: Helvetica, Arial, sans-serif;
+  background: #f8a000;
+  width: 160px;
   padding: 0px;
   height: 40px;
   display: inline-block;
