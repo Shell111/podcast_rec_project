@@ -1,17 +1,21 @@
-<h1>Login here</h1>
+<main class="log-in-page">
 
-<%= error_message %>
+  <h1>Log-in here</h1>
 
-<form action="/sessions" method="POST">
+  <%= error_message %>
 
-  <label for="email">Email:</label>
-  <input type="text" name="email" />
+  <form action="/sessions" method="POST">
 
-  <label for="password">Password:</label>
-  <input type="password" name="password" />
+    <label for="email">Email:</label>
+    <input type="email" name="email" />
+
+    <label for="password">Password:</label>
+    <input type="password" name="password" />
 
 
-  <button>Log in</button>
+    <button>Log in</button>
 
 
-</form>
+  </form>
+
+</main>
