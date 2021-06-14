@@ -8,6 +8,7 @@ body {
   margin: auto;
 }
 
+
 .logo a {
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -29,6 +30,7 @@ nav {
   align-items: center;
   border-bottom: 1px solid #f8a000;
   border-top: 1px solid #f8a000;
+  width: 100%;
 }
 
 nav ul {
@@ -161,9 +163,8 @@ a {
   font-size: 18px;
 }
 
-
 img {
-  width: 350px;
+  width: 100%;
   border-radius: 5px;
 }
 
@@ -249,6 +250,7 @@ form select {
 .new-show-form {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-top: 0px;
 }
 
 .new-show-form > img {
@@ -256,9 +258,10 @@ form select {
 }
 
 .new-show-image {
-  width: 450px;
+  width: 400px;
   border: 1px solid black;
   padding: 20px;
+  margin-left: 50px;
 }
 
 .update-btns {
@@ -332,6 +335,24 @@ form select {
   letter-spacing: 0.08em;
 }
 
+.sign-up-page > h1 {
+  font-size: 28px;
+  margin-top: 70px;
+  color: #f8a000;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+.recommend-content > h1 {
+  font-size: 28px;
+  margin: 70px 0 40px 0;
+  color: #f8a000;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
 footer {
   margin: 200px 0 40px 0;
   border-top: 1px solid #f8a000;
@@ -340,4 +361,66 @@ footer {
 footer > p {
   font-size: 15px;
   padding-top: 10px;
+}
+
+@media only screen and (max-width: 768px){
+  body {
+    width: 100%;
+    margin: 0;
+  }
+  .logo a {
+    text-transform: uppercase;
+    font-size: 1em;
+  }
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+  }
+
+  li {
+    margin-left: 0px;
+  }
+
+  .podcast-listing {
+    width: 90vw;
+    display: grid;
+    align-items: flex-start;
+    grid-template-columns: 1fr 1fr;
+
+  }
+  img {
+    width: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 420px) {
+  body {
+    width: 100%;
+    margin-left: 0;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .user_auth, button {
+    width: 132px;
+  }
+
+  .logo a {
+    text-transform: uppercase;
+    font-size: 1em;
+    padding-left: 10px;
+  }
+
+  .podcast-listing {
+    width: 90vw;
+    display: grid;
+    align-items: flex-start;
+    grid-template-columns: 1fr;
+  }
+
 }
