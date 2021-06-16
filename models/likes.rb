@@ -5,6 +5,3 @@ def create_like(user_id, podcast_id)
 end
 
 
-# def count_like(podcast_id)
-#   run_sql("SELECT COUNT(podcast_id), podcast_id FROM podcast_likes GROUP BY podcast_id;"[podcast_id])
-# end
