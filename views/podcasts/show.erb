@@ -14,6 +14,8 @@
     <h4 class="synopsis">About: </h4>
   <p><%=podcasts["about"]%></p>
 
+  <a class="view-btn" href="<%=podcasts["show_url"]%>">Listen here</a>
+
   <div class="update-btns">
       <button><a href="/podcasts/<%=podcasts["id"]%>/edit">Edit show</a></button>
 
@@ -25,7 +27,7 @@
   </div>
 
   <div class="back-to-menu">
-      <a href="/podcasts">Return to podcasts</a>
+      <a class="view-btn" href="/podcasts">Return to podcasts</a>
   </div>
 
   </div>

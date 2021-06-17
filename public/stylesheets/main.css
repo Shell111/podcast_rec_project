@@ -201,6 +201,23 @@ h4 {
   padding-bottom: 0px;
 }
 
+.view-btn {
+  color: #f8a000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding-top: 10px;
+  letter-spacing: .08em;
+  font-weight: 600;
+  transition: ease-in-out .4s;
+}
+
+.view-btn:hover {
+  letter-spacing: .2em;
+  color: #F68FAD;
+  font-weight: 700;
+}
+
 .back-to-menu {
   margin-top: 5px;
 }
@@ -209,24 +226,28 @@ h4 {
   width: 100%;
 }
 
-.like button {
-  background-color: pink;
-  border-radius: 50%;
-  width: 80px;
+a:visited {
+  color: none;
 }
 
-.like button:visited{
-  background-color:red;  
-  border-radius: 50%;
-  width: 80px;
-  border-color: 3px solid green;
+a:hover {
+  color: none;
 }
+
+.like button {
+  background-color: #F68FAD;
+  border-radius: 60%;
+  width: 80px;
+}
+#heart {
+  text-align: center;
+}
+
 
 .like button:hover{
-  background-color:red;  
+  background-color:#f8a000;  
   border-radius: 50%;
   width: 80px;
-  border-color: 3px solid green;
 }
 
 form {
@@ -397,6 +418,8 @@ form select {
   margin-top: -20px;
 }
 
+
+
 footer {
   margin: 200px 0 40px 0;
   border-top: 1px solid #f8a000;
@@ -412,6 +435,7 @@ footer > p {
     width: 100%;
     margin: 0;
     padding-left: 20px;
+    overflow-x: hidden;
   }
   .logo a {
     text-transform: uppercase;
@@ -490,6 +514,7 @@ footer > p {
     width: 55%;
     font-size: 1.6em;
   }
+
 }
 
 @media only screen and (max-width: 420px) {
@@ -497,6 +522,7 @@ footer > p {
     width: 100%;
     margin-left: 0;
     padding-left: 20px;
+    overflow-x: hidden;
   }
   nav {
     display: flex;

@@ -3,7 +3,7 @@ def all_shows()
 end
 
 
-# Display individual food
+# Display individual podcast
 def display_podcast(id)
   params = [ id ]
   sql_query = ("SELECT * FROM podcasts WHERE id = $1;")
