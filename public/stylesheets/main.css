@@ -19,6 +19,10 @@ body {
   color: black;
 }
 
+.logo.a:visited {
+  color: black;
+}
+
 .logo-bold {
   font-weight: 700;
 }
