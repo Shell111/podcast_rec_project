@@ -217,7 +217,7 @@ h4 {
 }
 
 .view-btn:hover {
-  letter-spacing: .2em;
+  letter-spacing: .15em;
   color: #F68FAD;
   font-weight: 700;
 }
@@ -384,6 +384,10 @@ form select {
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 0.08em;
+}
+
+.back-to-podcasts > .view-btn {
+  margin-top: 40px;
 }
 
 .sign-up-page > h1 {

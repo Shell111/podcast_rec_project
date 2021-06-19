@@ -94,6 +94,18 @@ https://res.cloudinary.com/shell-shell/image/upload/v1623976977/Podcast-Rec-DB-E
 - Filtering of shows according to genre.
 
 
+## What I've learned
+- How to use SQL and be able to read or manipulate the data.
+- How to create a web application that is backed by a database.
+- Using the Sinatra framework, and being able to read the errors it provides!
+- Understanding RESTful routes and params.
+- How to work with the models, controllers and views pattern.
+- Working out what the project MVP looks like, and getting that up and running first before secondary features.
+- The benefits of using planning like pseudo code, wireframes, and visual design before starting to develop code!
+- Security and how to protect data and routes.
+
+
+
 ## Bugs
 - Responsive design can require reloading.
 - User needs to log in after registering. 

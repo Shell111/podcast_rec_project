@@ -10,13 +10,14 @@ end
 
 
 # Displays create form
-get '/podcasts/new' do
+get '/podcasts/new', :auth => true do 
   erb :'/podcasts/new'
 end
 
 
+
 # Display individual food
-get '/podcasts/:id' do |id|
+get '/podcasts/:id', :auth => true do |id|
   results = display_podcast(id)
   erb :'podcasts/show', locals: {podcasts: results[0]}  
 end
@@ -24,7 +25,7 @@ end
 
 
 # Retrieves the form data
-post '/podcasts' do
+post '/podcasts', :auth => true do 
   podcast_title = params[:podcast_title]
   genre = params[:genre]
   image_url = params[:image_url]
@@ -37,7 +38,7 @@ end
 
 
 # Update & edit button links to this
-get '/podcasts/:id/edit' do |id|
+get '/podcasts/:id/edit', :auth => true do |id|
   podcast_title = params[:podcast_title]
   genre = params[:genre]
   image_url = params[:image_url]
@@ -50,7 +51,7 @@ end
 
 
 # SERVER processing function
-put '/podcasts/:id' do |id|
+put '/podcasts/:id', :auth => true do |id|
   podcast_title = params[:podcast_title]
   genre = params[:genre]
   image_url = params[:image_url]
@@ -64,7 +65,7 @@ end
 
 # SERVER processing function
 # Delete individual food 
-delete '/podcasts/:id' do |id|
+delete '/podcasts/:id', :auth => true do |id|
   results = delete_show(id)
   redirect "/podcasts"
 end

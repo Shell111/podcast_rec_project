@@ -23,7 +23,7 @@
   <% podcasts.each do |podcast|%>
 
     <section class="podcast">
-      <img src="<%=podcast["image_url"] %>" alt="<%= podcast["podcast_title"]%> podcast image">
+      <a href="/podcasts/<%= podcast["id"]%>" target="_blank"><img src="<%=podcast["image_url"] %>" alt="<%= podcast["podcast_title"]%> podcast image"></a>
 
       <h3><%= podcast["podcast_title"]%></h3>
 
