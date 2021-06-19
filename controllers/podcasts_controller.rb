@@ -1,5 +1,10 @@
 get '/podcasts' do
   results = all_shows()
+  results = results.to_a.map do | podcast |
+    count = count_like(podcast["id"])
+    podcast["like_count"] = count[0]["like_count"]
+    podcast 
+  end
   erb :'/podcasts/index', locals: {podcasts: results }
 end
 

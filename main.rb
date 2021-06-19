@@ -20,7 +20,5 @@ get '/' do
   redirect '/podcasts'
 end
 
-# get '/podcast' do
-#   "The Podcast Rec & more content here"
-# end
+
  

@@ -32,17 +32,14 @@
       <p>About:</p>
       <p><%= podcast["about"]%><a class="view-btn" href="/podcasts/<%= podcast["id"]%>"><br>View show </a></p>
 
-    <div class="like-form">
-    <% if is_logged_in?() %>
-
-      <form class="like" action="/likes" method="POST">
-        <input type="hidden" name="podcast_id" value="<%= podcast["id"] %>">
-        <!-- <a href=""><button class="heart">like</button></a> -->
-        <button id="heart"><%= podcast["count"]%>like</button>
+      <div class="like-form">
+        <% if is_logged_in?() %>
+            <form class="like" action="/likes" method="POST">
+              <input type="hidden" name="podcast_id" value="<%= podcast["id"] %>">
+              <button class="heart"><%= podcast["like_count"]%> like</button>
+            </form>
         <% end %>
-      </form>
-
-    </div>
+      </div>
 
     </section>
   
