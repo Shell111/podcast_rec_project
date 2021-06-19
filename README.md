@@ -96,6 +96,7 @@ https://res.cloudinary.com/shell-shell/image/upload/v1623976977/Podcast-Rec-DB-E
 
 ## Bugs
 - Responsive design can require reloading.
+- User needs to log in after registering. 
 
 
 ## Screenshot of interface
