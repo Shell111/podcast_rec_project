@@ -36,7 +36,7 @@
         <% if is_logged_in?() %>
             <form class="like" action="/likes" method="POST">
               <input type="hidden" name="podcast_id" value="<%= podcast["id"] %>">
-              <button class="heart"><%= podcast["like_count"]%> like</button>
+              <button class="heart"><%= podcast["like_count"]%> likes</button>
             </form>
         <% end %>
       </div>
