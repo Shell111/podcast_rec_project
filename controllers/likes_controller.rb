@@ -1,4 +1,4 @@
-post '/likes' do
+post '/likes', :auth => true do 
   user_id = current_user["id"]
   podcast_id = params[:podcast_id]
   create_like(user_id, podcast_id)

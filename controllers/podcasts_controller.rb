@@ -16,8 +16,8 @@ end
 
 
 
-# Display individual food
-get '/podcasts/:id', :auth => true do |id|
+# Display individual 
+get '/podcasts/:id', # :auth => true do |id|
   results = display_podcast(id)
   erb :'podcasts/show', locals: {podcasts: results[0]}  
 end
@@ -64,7 +64,7 @@ end
 
 
 # SERVER processing function
-# Delete individual food 
+# Delete individual  
 delete '/podcasts/:id', :auth => true do |id|
   results = delete_show(id)
   redirect "/podcasts"
