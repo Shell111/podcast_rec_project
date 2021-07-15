@@ -15,10 +15,9 @@ get '/podcasts/new', :auth => true do
 end
 
 
-
 # Display individual 
 # :auth => true do |id|
-get '/podcasts/:id'
+get '/podcasts/:id' do
   results = display_podcast(id)
   erb :'podcasts/show', locals: {podcasts: results[0]}  
 end
