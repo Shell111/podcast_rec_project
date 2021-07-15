@@ -16,8 +16,9 @@ end
 
 
 # Display individual 
-# :auth => true do |id|
-get '/podcasts/:id' do |id|
+# :auth => true do |id| / to secure content
+# '/podcasts/:id' do |id| / to allow unlogged in viewing
+get '/podcasts/:id', :auth => true do |id|
   results = display_podcast(id)
   erb :'podcasts/show', locals: {podcasts: results[0]}  
 end
