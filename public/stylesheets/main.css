@@ -327,6 +327,9 @@ form select {
 }
 
 .update-btns a {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   font-size: 14px;
   text-decoration: none;
 }
