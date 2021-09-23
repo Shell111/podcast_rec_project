@@ -277,16 +277,19 @@ form input {
 input[type="submit"] {
   -webkit-appearance: none;
   -moz-appearance: none;
+  border-radius: 0;
 }
 
 input[type="reset"] {
   -webkit-appearance: none;
   -moz-appearance: none;
+  border-radius: 0;
 }
 
 input[type="button"] {
   -webkit-appearance: none;
   -moz-appearance: none;
+  border-radius: 0;
 }
 
 form button {
