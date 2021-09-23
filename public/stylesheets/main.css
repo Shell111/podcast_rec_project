@@ -273,7 +273,12 @@ form input {
   border: 1px solid black;
   box-shadow: inset 2px 2px black;
 }
-input {
+input[type="submit"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+input[type="button"] {
   -webkit-appearance: none;
   -moz-appearance: none;
 }
