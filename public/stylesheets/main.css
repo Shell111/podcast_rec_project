@@ -319,6 +319,9 @@ form select {
 }
 
 .update-btns {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   display: flex;
   margin-top: 20px;
 }
