@@ -328,6 +328,7 @@ form select {
 .update-btns input {
   -webkit-appearance: none;
   -moz-appearance: none;
+  appearance: none;
   list-style-type: none;
   margin-left: 10px;
   text-transform: uppercase;
@@ -344,6 +345,9 @@ form select {
 }
 
 .update-btns button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   list-style-type: none;
   margin: 50px 0 0 0;
   text-transform: uppercase;
