@@ -326,6 +326,8 @@ form select {
 }
 
 .update-btns input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
   list-style-type: none;
   margin-left: 10px;
   text-transform: uppercase;
