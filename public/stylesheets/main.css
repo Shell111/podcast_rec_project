@@ -273,6 +273,10 @@ form input {
   border: 1px solid black;
   box-shadow: inset 2px 2px black;
 }
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
 
 form button {
   font-family: Arial, Helvetica, sans-serif;
